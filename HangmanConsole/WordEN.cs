@@ -91,11 +91,11 @@ namespace HangmanConsole
 
         public string LoseMessage()
         {
-            return ("-- YOU LOSE -- \nThe word was " + this.playingWord + "\n\nPlay Again ?");
+            return ("-- YOU LOSE -- \nThe word was " + this.playingWord + "\n\nPlay Again ? Y/N");
         }
         public string WinMessage()
         {
-            return ("-- YOU WIN !!! -- \nYou find the word " + this.playingWord + "\n\nPlay Again ?");
+            return ("-- YOU WIN !!! -- \nYou find the word " + this.playingWord + "\n\nPlay Again ? Y/N");
         }
     }
 }

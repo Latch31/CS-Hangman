@@ -91,11 +91,11 @@ namespace HangmanConsole
 
         public string LoseMessage()
         {
-            return ("-- Perdu !! -- \nLe mot été " + this.playingWord + "\n\nRejouer ? ");
+            return ("-- Perdu !! -- \nLe mot été " + this.playingWord + "\n\nRejouer ? Y/N");
         }
         public string WinMessage()
         {
-            return ("-- Gagné !!! -- \nTu a trouvé le mot " + this.playingWord + "\n\nRejouer ?");
+            return ("-- Gagné !!! -- \nTu a trouvé le mot " + this.playingWord + "\n\nRejouer ? Y/N");
         }
     }
 }

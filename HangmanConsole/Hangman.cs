@@ -12,9 +12,12 @@ namespace HangmanConsole
         static void Main(string[] args)
         {
             IWord playingWord;
-            playingWord = ChoseLanguage();
-
-            Play(playingWord);
+            string replay;
+            do
+            {
+                playingWord = ChoseLanguage();
+                Play(playingWord);
+            }while(Console.ReadKey().Key != ConsoleKey.N);
         }
 
         static public IWord ChoseLanguage()
@@ -24,6 +27,7 @@ namespace HangmanConsole
             {
                 Console.WriteLine("Choose your language : FR | EN");
                 userEntry = Console.ReadLine();
+                userEntry = userEntry.ToUpper();
             }while(userEntry == "FR" && userEntry == "EN");
             switch (userEntry)
             {
