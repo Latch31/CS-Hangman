@@ -80,7 +80,13 @@ namespace HangmanConsole
         }
         public override string ToString()
         {
-            return this.playingWord;
+            StringBuilder word = new StringBuilder();
+            foreach( char c in playingWord)
+            {
+                word.Append(c);
+                word.Append(" ");
+            }
+            return word.ToString();
         }
 
         public string LoseMessage()

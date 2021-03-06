@@ -27,8 +27,8 @@ namespace HangmanConsole
             }while(userEntry == "FR" && userEntry == "EN");
             switch (userEntry)
             {
-                /*case "FR" :
-                    return new WordFR();*/
+                case "FR" :
+                    return new WordFR();
                 case "EN"  : 
                     return new WordEN();
                 default:
