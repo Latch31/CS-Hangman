@@ -12,7 +12,6 @@ namespace HangmanConsole
         static void Main(string[] args)
         {
             IWord playingWord;
-            string replay;
             do
             {
                 playingWord = ChoseLanguage();
